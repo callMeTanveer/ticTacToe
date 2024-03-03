@@ -16,6 +16,8 @@ Winning Possibilities:
 
 let boxes = document.querySelectorAll(".box"); 
 let resetBtn = document.querySelector("#reset-btn"); 
+let resetGamebtn = document.querySelector("#reset-btn");
+let newGame = document.querySelector("#new-game")
 
 let turnO = true; 
 
@@ -30,9 +32,20 @@ const winPatterns = [
     [2, 4, 6]
 ];
 
+const enableBoxes = () => {
+    for (let box of boxes) {
+        box.disabled = false; 
+        box.innerText = ""; 
+    }
+}
+
+const resetGame = () => {
+    turnO = true; 
+    enableBoxes(); 
+}
+
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
-        console.log("box was clicked.")
         if(turnO){
             box.innerText = "O"; 
             turnO = false; 
@@ -69,3 +82,6 @@ const checkWinner = () => {
         }
     }
 };
+
+resetGamebtn.addEventListener("click", resetGame);
+newGame.addEventListener("click", resetGame)
