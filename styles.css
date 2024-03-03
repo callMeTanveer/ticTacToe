@@ -1,0 +1,43 @@
+/* to remove the default margin given by browsers */
+* {
+    margin: 0px; 
+    padding: 0px;
+}
+
+body {
+    background-color: #3c3c3c;
+    color: #84ad74;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+}
+
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;  /* align the flex item to center in horizontal direction */
+    align-items: center;  /*  align the flex item to center in vertical direction */
+}
+
+.game {
+    height: 60vmin;  /* Min of viewport height and width */
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;  /* Wrap around if there is not enough space on a single line */
+    justify-content: center; 
+    align-items: center;
+    gap: 1.5vmin; 
+
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 0 1rem rgba(255, 255, 255, 0.2); */
+    font-size: 8vmin; 
+    color: #ec7475;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
