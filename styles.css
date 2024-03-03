@@ -40,6 +40,7 @@ body {
     font-size: 8vmin; 
     color: #ec7475;
     /* font-family: 'Courier New', Courier, monospace; */
+    background-color: #ffffc7;
 }
 
 
@@ -63,4 +64,8 @@ body {
     border-radius: 1rem;
     border: none;
     font-size: 3vmin; 
+}
+
+#msg {
+    padding: 2vmin; 
 }
