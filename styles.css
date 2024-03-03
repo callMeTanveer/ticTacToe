@@ -41,3 +41,26 @@ body {
     color: #ec7475;
     /* font-family: 'Courier New', Courier, monospace; */
 }
+
+
+#reset-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #740f10;
+    color: #ec7475;
+    border-radius: 1rem;
+    border: none;
+    font-size: 3vmin; 
+
+
+}
+
+#new-game {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #84ad74;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    font-size: 3vmin; 
+}
